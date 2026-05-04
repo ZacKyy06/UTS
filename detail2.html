@@ -1,0 +1,236 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>ZacKyy in DEMA FSAINTEK</title>
+	<link rel="stylesheet" href="css detail2/bootstrap-grid.css" type="text/css">
+	<link rel="stylesheet" href="css detail2/styles.css" type="text/css">
+	<link href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+	<style>
+		.project-container {
+			background-color: white;
+			max-width: 1200px;
+			margin: 0 auto;
+			box-shadow: 0 0 30px rgba(0,0,0,0.1);
+		}
+		.full-width-image {
+			width: 100%;
+			height: 500px;
+			object-fit: cover;
+		}
+		.breadcrumb {
+			padding: 20px;
+			background-color: #f8f9fa;
+			font-family: 'IBM Plex Mono', monospace;
+			font-size: 14px;
+		}
+		.breadcrumb a {
+			color: black;
+			text-decoration: none;
+		}
+		.breadcrumb a:hover {
+			text-decoration: underline;
+		}
+		.project-title {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			font-size: 40pt;
+			transform: translate(-50%, -50%);
+			color: white;
+			text-align: center;
+			text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+		}
+		.image-container {
+			position: relative;
+		}
+		
+		/* Slider Styles */
+		.project-slider {
+			position: relative;
+			width: 100%;
+			overflow: hidden;
+		}
+		.slider-container {
+			display: flex;
+			transition: transform 0.5s ease;
+			width: 300%;
+		}
+		.slider-slide {
+			width: 33.33%;
+			flex-shrink: 0;
+		}
+		.slider-slide img {
+			width: 100%;
+			height: 500px;
+			object-fit: cover;
+		}
+		.slider-controls {
+			position: absolute;
+			bottom: 20px;
+			left: 50%;
+			transform: translateX(-50%);
+			display: flex;
+			gap: 10px;
+		}
+		.slider-dot {
+			width: 10px;
+			height: 10px;
+			background-color: rgba(255,255,255,0.5);
+			border-radius: 50%;
+			cursor: pointer;
+			transition: background-color 0.3s;
+		}
+		.slider-dot.active {
+			background-color: white;
+		}
+		
+		/* Slider Checkbox Hack */
+		.slider-toggle {
+			display: none;
+		}
+		#slide1:checked ~ .slider-container {
+			transform: translateX(0);
+		}
+		#slide2:checked ~ .slider-container {
+			transform: translateX(-33.33%);
+		}
+		#slide3:checked ~ .slider-container {
+			transform: translateX(-66.66%);
+		}
+	</style>
+</head>
+
+<body>
+	<nav>
+		<ul>
+			<li><a href="https://wa.me/+6289653804299?text=Halo, apa kabar?">contact</a></li>
+			<li> <a href="Portfolio.html">home</a></li>
+			<li><a href="profil.html">profil</a></li>
+			<li><a href="https://www.instagram.com/itsmezckyy2/" target="_blank">instagram</a></li>
+		</ul>
+	</nav>
+
+	<div class="project-container">
+		<div class="image-container">
+			<img src="image/Foto Kepengurusan DEMA FSAINTEK.jpg" class="full-width-image" alt="Foto Kepengurusan DEMA FSAINTEK">
+			<h1 class="project-title">Dewan Eksekutif Mahasiswa<br>Fakultas Sains dan Teknologi <br>2025-2026</h1>
+		</div>
+		<!-- <div class="breadcrumb">
+			<a href="../index.html">Home</a> / User Experience Design for Dashboard App
+		</div> -->
+		<section class="project" style="padding-top: 50px;">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm">
+						<h2>Story</h2>
+						<p>
+							Ini adalah organisasi kedua saya, walaupun hanyaa satu periode saya menjadi pengurus ddi organisasi ini, tapi saya juga bisa mendapatkan banyak teman dari berbagai jurusan
+							yang ada di Fakultas Saintek. Sama seperti di Himpunan, saya juga mendapatkan kepercayaan menjadi koordinator divisi di beberapa kegiatan, contoh nya di kegiatan Workhop saya dipercayai
+							menjadi Koor. Divisi Acara, Koor. Divisi PDD di kegian Bina Desa, Koor. Divisi PDD di kegiatan PMF (Penerimaan Mahasiswa Fakultas), bahkan menjadi Bendahara Panitia di kegiatan
+							MAKRAB (Malam Keakraban), cukup bangga karena meskipun saya banyak kurangnya dalam menjalankan tugas ku, tapi mereka tetap memberikan saya kepercayaan dan saya terus memperbaiki kesalahan
+							yang ada. Terima kasih DEMA FSAINTEK.
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="project blue" style="background-color: rgb(255, 94, 94);">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm">
+						<h2>Jabatan</h2>
+						<p>Di Semua Kegiatan;</p>
+						<ul>
+							<li>Koord. Divisi Acara (Workshop)</li>
+							<li>Koord. Divisi PDD (Bina Desa)</li>
+							<li>Koord. Divisi PDD (Penerimaan Mahasiswa Fakultas)</li>
+							<li>Anggota Divisi PDD HUMAS (Dialog Reflektif)</li>
+							<li>Bendahara Panitia (Malam Keakraban)</li>
+							<li></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- <section class="project">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm">
+						<h2>UX Design Strategy</h2>
+						<p>Pendekatan desain yang komprehensif berfokus pada:</p>
+						<ul>
+							<li>Desain antarmuka yang bersih dan minimalis</li>
+							<li>Visualisasi data yang informatif dan mudah dipahami</li>
+							<li>Sistem navigasi yang intuitif dengan hierarki informasi yang jelas</li>
+							<li>Responsivitas untuk berbagai ukuran layar dan perangkat</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section> -->
+
+		<!-- <section class="project blue">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm">
+						<h2>Key Outcomes</h2>
+						<p>Hasil utama dari proyek desain UX:</p>
+						<ul>
+							<li>Peningkatan waktu penggunaan aplikasi sebesar 60%</li>
+							<li>Penurunan kompleksitas navigasi sebesar 40%</li>
+							<li>Peningkatan kepuasan pengguna sebesar 75% berdasarkan survei</li>
+							<li>Penghargaan 'Best UX Design' dari Digital Innovation Summit</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section> -->
+
+		<section class="project">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm">
+						<h2>Gallery</h2>
+						<div class="project-slider">
+							<input type="radio" name="slider" id="slide1" class="slider-toggle" checked>
+							<input type="radio" name="slider" id="slide2" class="slider-toggle">
+							<input type="radio" name="slider" id="slide3" class="slider-toggle">
+							
+							<div class="slider-container">
+								<div class="slider-slide">
+									<img src="image/Foto Kepengurusan DEMA FSAINTEK.jpg" alt="Dashboard App Main Interface">
+								</div>
+								<div class="slider-slide">
+									<img src="image/KOMINFO.jpg.jpeg" alt="Dashboard App Analytics View">
+								</div>
+								<div class="slider-slide">
+									<img src="image/Me in DEMA FSAINTEK.jpg.jpeg" alt="Dashboard App Mobile View">
+								</div>
+							</div>
+							
+							<div class="slider-controls">
+								<label for="slide1" class="slider-dot"></label>
+								<label for="slide2" class="slider-dot"></label>
+								<label for="slide3" class="slider-dot"></label>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+
+	<footer id="contact">
+		<h2>Interested in<br>
+			learning more?<br><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="2849464c4149465249465d44684f45494144064b4745">[email&#160;protected]</a></h2>
+			<p>designed & developed by Andi Zikra 2024</p>
+			<p>modified by ZacKyy 2026</p>
+		</footer>
+	<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script defer src="https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516" integrity="sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg==" data-cf-beacon='{"version":"2024.11.0","token":"0979519352d845179b7d0b6ab2feaaab","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9f66011668c89cab',t:'MTc3Nzg4MTk2Nw=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+	</html>
